@@ -1,0 +1,23 @@
+.Nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.Nav__content {
+  width: 100%;
+  height: var(--nav-height);
+  padding: 0 15px;
+  max-width: 1500px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.content__logo {
+  background-image: url("../../../assets/images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  width: 100px;
+}

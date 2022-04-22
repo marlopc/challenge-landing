@@ -1,0 +1,154 @@
+.Hero {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--nav-height));
+  max-height: 710px;
+}
+
+.Hero__illustration {
+  background-image: url("../../assets/images/image-hero-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  width: 100%;
+  flex: 1;
+}
+
+.Hero__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  max-width: 650px;
+  margin: 5px auto;
+}
+
+.content__title {
+  margin: 30px 0 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content__paragraph {
+  text-align: center;
+  line-height: 26px;
+  color: var(--gray);
+}
+
+.content__anchor {
+  background: var(--black);
+  color: var(--white);
+  padding: 18px 25px;
+  margin: 30px 0;
+  border-radius: 18px;
+  font-size: 20px;
+  border: 1px solid var(--black);
+  transition: background-color 100ms ease;
+  font-weight: bold;
+}
+
+.content__anchor:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.content__sponsors {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sponsors__item {
+  width: 20%;
+  max-width: 140px;
+  min-width: 63px;
+  height: 60px;
+}
+
+.sponsors__item--databiz {
+  background-image: url("../../assets/images/client-databiz.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sponsors__item--audiophile {
+  background-image: url("../../assets/images/client-audiophile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sponsors__item--meet {
+  background-image: url("../../assets/images/client-meet.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sponsors__item--maker {
+  background-image: url("../../assets/images/client-maker.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 900px) {
+  .Hero {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 120px 50px;
+    min-height: 510px;
+    max-height: 790px;
+    max-width: 1430px;
+    margin: 0 auto;
+    gap: 25px;
+  }
+
+  .Hero__illustration {
+    background-image: url("../../assets/images/image-hero-desktop.png");
+    height: 100%;
+    max-width: 50%;
+  }
+
+  .Hero__content {
+    padding: 0;
+    align-items: flex-start;
+    width: 50%;
+    max-height: 500px;
+  }
+
+  .content__title {
+    text-align: left;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+  }
+
+  .content__paragraph {
+    text-align: start;
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .content__anchor {
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: auto;
+  }
+
+  .content__sponsors {
+    flex-wrap: nowrap;
+    margin-top: 25px;
+    width: 80%;
+    justify-content: flex-start;
+  }
+
+  .sponsors__item {
+    max-width: 80px;
+  }
+}
