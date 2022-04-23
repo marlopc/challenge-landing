@@ -1,0 +1,14 @@
+.Button {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.Button--border {
+  border: 1px solid currentColor;
+  border-radius: 10px;
+}
+
+.Button:hover {
+  color: var(--black);
+}

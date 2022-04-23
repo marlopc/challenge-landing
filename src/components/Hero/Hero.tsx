@@ -11,7 +11,9 @@ const Hero = () => {
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <a className="content__anchor">Learn more</a>
+        <a className="content__anchor" href="/learn">
+          Learn more
+        </a>
         <div className="content__sponsors">
           <span className="sponsors__item sponsors__item--databiz" />
           <span className="sponsors__item sponsors__item--audiophile" />

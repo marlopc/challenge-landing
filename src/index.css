@@ -2,6 +2,8 @@
   --white: #fafafa;
   --gray: #696969;
   --black: #141414;
+  --drawer-shadow: #00000067;
+  --dropdown-shadow: #00000014;
   --mobile-breakpoint: 375px;
   --desktop-breakpoint: 1440px;
   --nav-height: 65px;
@@ -10,6 +12,7 @@
 body {
   font-size: 18px;
   font-family: "Epilogue";
+  background: var(--white);
 }
 
 *,
@@ -31,11 +34,17 @@ a {
 button {
   background: transparent;
   border: 0;
+  font-size: inherit;
 }
 
 button,
 a {
   cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 main {

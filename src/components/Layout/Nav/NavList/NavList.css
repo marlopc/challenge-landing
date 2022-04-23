@@ -1,0 +1,14 @@
+.NavList {
+  width: 100%;
+  color: var(--gray);
+  font-size: 18px;
+  overflow-y: auto;
+}
+
+@media (min-width: 900px) {
+  .NavList {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+  }
+}
